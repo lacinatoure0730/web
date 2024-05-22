@@ -54,7 +54,7 @@ try {
         <main>
         <div class="form-container">
           <h2>Informations du client</h2>
-          <form action="/liste.php" method="POST" enctype="multipart/form-data">
+          <form action="liste.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
               <label for="nom">Nom:</label>
               <input type="text" id="nom" name="nom" value="<?php echo $nom; ?>" readonly>
