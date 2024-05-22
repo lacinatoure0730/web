@@ -1,3 +1,12 @@
+<?php
+// Obtenir l'identifiant du sous-réseau à partir des informations de la carte mère
+$subnetID = trim(file_get_contents("/sys/devices/virtual/dmi/id/board_asset_tag"));
+
+// Générer le contenu HTML avec l'identifiant du sous-réseau
+$htmlContent = "<h1>This instance is in the subnet with ID: $subnetID </h1>";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +17,7 @@
   
 </head>
 <body>
+<?php echo $htmlContent; ?>
 
   <?php include 'header.php' ?>
 
