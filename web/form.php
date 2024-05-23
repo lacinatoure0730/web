@@ -28,13 +28,6 @@
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit">Envoyer</button>
-          </form>
-          <form action="ups3.php" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="anyfile">Select image to upload:</label>
-                <input type="file" name="anyfile" id="anyfile">
-                <input type="submit" value="Upload Image" name="submit">
-            </div>
-        </form>      
+          </form>    
         </div>
 </div>
